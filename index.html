@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 资讯精选 · 2026-10-13</title>
+<style>
+  :root {
+    --ink: #0b0b0c;
+    --ink-soft: #3c3c3f;
+    --ink-mute: #74747a;
+    --rule: #e2e0dc;
+    --paper: #fbfaf8;
+    --paper-2: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 28px 96px; }
+  header.masthead { background: var(--ink); color: #fff; padding: 64px 28px 56px; }
+  .masthead .inner { max-width: 860px; margin: 0 auto; }
+  .kicker { font-size: 12px; letter-spacing: 0.34em; text-transform: uppercase; color: #9a9aa0; margin-bottom: 26px; }
+  h1 { font-size: clamp(30px, 5vw, 46px); line-height: 1.2; font-weight: 600; margin: 0 0 20px; }
+  .deck { color: #c9c9cd; font-size: 15px; max-width: 640px; margin: 0 0 30px; }
+  .meta-strip {
+    display: flex; flex-wrap: wrap; gap: 10px 26px;
+    border-top: 1px solid #2e2e31; padding-top: 20px;
+    font-size: 12.5px; letter-spacing: 0.1em; color: #8f8f95; text-transform: uppercase;
+  }
+  .toc { margin: 54px 0 8px; }
+  .toc-title {
+    font-size: 12px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--ink-mute);
+    padding-bottom: 14px; border-bottom: 1px solid var(--rule); margin-bottom: 22px;
+  }
+  .toc ol { list-style: none; counter-reset: toc; margin: 0; padding: 0; columns: 2; column-gap: 40px; }
+  .toc li { counter-increment: toc; font-size: 14.5px; padding: 6px 0; break-inside: avoid; color: var(--ink-soft); }
+  .toc li::before { content: counter(toc, decimal-leading-zero); font-size: 11px; color: var(--ink-mute); margin-right: 10px; }
+  article {
+    background: var(--paper-2); border: 1px solid var(--rule); border-top: 3px solid var(--ink);
+    padding: 34px 34px 30px; margin-top: 30px;
+  }
+  .item-head { display: flex; align-items: baseline; gap: 16px; margin-bottom: 16px; }
+  .index { font-size: 30px; line-height: 1; font-weight: 300; font-variant-numeric: tabular-nums; }
+  .tag {
+    display: inline-block; border: 1px solid var(--ink); border-radius: 999px;
+    padding: 2px 11px; font-size: 11.5px; letter-spacing: 0.12em; white-space: nowrap;
+  }
+  h2 { font-size: 23px; line-height: 1.4; font-weight: 600; margin: 0 0 14px; }
+  .facts {
+    display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 13px; color: var(--ink-mute);
+    padding-bottom: 18px; border-bottom: 1px solid var(--rule); margin-bottom: 20px;
+  }
+  .facts b { font-weight: 500; color: var(--ink-soft); }
+  .field { margin: 0 0 14px; }
+  .field-label {
+    display: block; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--ink-mute); margin-bottom: 4px;
+  }
+  .field p { margin: 0; font-size: 15.5px; color: var(--ink-soft); }
+  .src { margin-top: 18px; font-size: 13px; color: var(--ink-mute); word-break: break-all; }
+  .src a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); }
+  footer { margin-top: 64px; padding-top: 30px; border-top: 1px solid var(--rule); font-size: 13.5px; color: var(--ink-mute); }
+  footer h3 { font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink); margin: 0 0 12px; }
+  footer p { margin: 0 0 12px; }
+  @media (max-width: 620px) {
+    .toc ol { columns: 1; }
+    article { padding: 26px 20px 24px; }
+    header.masthead { padding: 46px 20px 40px; }
+    .wrap { padding: 0 16px 72px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="inner">
+    <div class="kicker">AI Intelligence Brief</div>
+    <h1>AI 资讯精选</h1>
+    <p class="deck">用 Firecrawl 抓取公开渠道，筛选并逐条打开原文核实 8 条资讯，按时间、背景、内容与来源整理。本次覆盖了需要浏览器渲染才能读取的中文媒体。</p>
+    <div class="meta-strip">
+      <span>2026 年 10 月 13 日</span>
+      <span>8 条精选</span>
+      <span>来自 OpenAI / Anthropic / Google / Meta / 微软 / 雷锋网</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <nav class="toc">
+    <div class="toc-title">本期目录</div>
+    <ol>
+      <li>GPT-6 向全体用户开放</li>
+      <li>OpenAI 封禁两个「假媒体」行动</li>
+      <li>Anthropic 发起网络安全计划</li>
+      <li>Google 发布 Gemini 语音模型</li>
+      <li>Meta 发布首个前沿模型</li>
+      <li>微软呼吁 AI 监管</li>
+      <li>DeepSeek 把工具链铺到华为昇腾</li>
+      <li>字节发现 DeepSeek 的「周期性失忆」</li>
+    </ol>
+  </nav>
+
+  <article>
+    <div class="item-head"><span class="index">01</span><span class="tag">模型发布</span></div>
+    <h2>GPT-6 向全体 ChatGPT 用户开放，并带来「Intelligent UI」</h2>
+    <div class="facts">
+      <span><b>时间</b> 2026-10-07</span>
+      <span><b>来源渠道</b> OpenAI 官网</span>
+    </div>
+    <div class="field">
+      <span class="field-label">背景</span>
+      <p>GPT-6 上个月先向付费用户开放，这一轮是把新一代模型铺到更广的用户群。</p>
+    </div>
+    <div class="field">
+      <span class="field-label">内容</span>
+      <p>OpenAI 宣布把 GPT-6 扩展到每周超过 12 亿的 ChatGPT 用户，同时上线 Intelligent UI：回答不再只是文字，而是直接生成可交互的界面，把讲解和动手操作合在一起（官方举的例子是讲自行车结构时可以点选各个部件查看）。</p>
+    </div>
+    <div class="src">原文：<a href="https://openai.com/index/gpt-6-for-everyone/">openai.com/index/gpt-6-for-everyone/</a></div>
+  </article>
+
+  <article>
+    <div class="item-head"><span class="index">02</span><span class="tag">安全</span></div>
+    <h2>OpenAI 封禁两个借 AI 包装的「假媒体机构」影响行动</h2>
+    <div class="facts">
+      <span><b>时间</b> 2026-10-08</span>
+      <span><b>来源渠道</b> OpenAI 官网</span>
+    </div>
+    <div class="field">
+      <span class="field-label">背景</span>
+      <p>这是 OpenAI 威胁报告的延续。官方称发布这类报告是为了让监管方、同行和公众看到攻击者如何使用 AI，以及他们试图利用的漏洞。</p>
+    </div>
+    <div class="field">
+      <span class="field-label">内容</span>
+      <p>OpenAI 披露并封禁了两个隐蔽影响行动，一个来自俄罗斯、一个来自伊朗。它们把模型与传统手段结合，用「假媒体机构」的形式把地缘政治和冲突相关叙事包装成目标受众更愿意接受的内容；其中伊朗那组还运营了 7 个假记者人设账号。</p>
+    </div>
+    <div class="src">原文：<a href="https://openai.com/index/disrupting-ai-enabled-false-front-operations/">openai.com/index/disrupting-ai-enabled-false-front-operations/</a></div>
+  </article>
+
+  <article>
+    <div class="item-head"><span class="index">03</span><span class="tag">安全</span></div>
+    <h2>Anthropic 启动 Cyber Mission，为防守方提供工具与资源</h2>
+    <div class="facts">
+      <span>时间</span><span>2026-10-08</span>
+      <span><b>时间</b> 2026-10-08</span>
+      <span><b>来源渠道</b> Anthropic 官网</span>
+    </div>
+    <div class="field">
+      <span class="field-label">背景</span>
+      <p>官方给出两点动因：前沿模型可能被滥用去利用漏洞、发起网络攻击；同时关键基础设施和开源软件社区长期缺资源，而有国家背景的攻击者已在其内部经营多年。</p>
+    </div>
+    <div class="field">
+      <span class="field-label">内容</span>
+      <p>Anthropic 宣布启动一项长期网络安全计划 Cyber Mission，为防守方提供工具、研究和资源，起步聚焦两个方向：应对前沿模型被用于漏洞利用与网络攻击，以及支持资源紧张的关键基础设施和开源软件维护者。</p>
+    </div>
+    <div class="src">原文：<a href="https://www.anthropic.com/news/anthropic-cyber-mission">anthropic.com/news/anthropic-cyber-mission</a></div>
+  </article>
+
+  <article>
+    <div class="item-head"><span class="index">04</span><span class="tag">开发者工具</span></div>
+    <h2>Google 发布 Gemini 3.8 Live 与 3.5 Transcribe</h2>
+    <div class="facts">
+      <span><b>时间</b> 2026-09-15</span>
+      <span><b>来源渠道</b> Google 官方博客</span>
+    </div>
+    <div class="field">
+      <span class="field-label">背景</span>
+      <p>Google 在扩大面向开发者的语音能力组合，目标是做实时、语音优先的产品体验。</p>
+    </div>
+    <div class="field">
+      <span class="field-label">内容</span>
+      <p>Google 在 Gemini API 和 Google AI Studio 发布新的语音模型：Gemini 3.8 Live 是原生语音到语音模型，可以一边保持对话一边执行任务，其 Extended Thinking 版本在 Artificial Analysis 的语音对话排行榜上排名第一；Gemini 3.5 Transcribe 是专用的高精度语音转文字模型。</p>
+    </div>
+    <div class="src">原文：<a href="https://blog.google/innovation-and-ai/technology/developers-tools/build-real-time-voice-applications-gemini-audio/">blog.google / build-real-time-voice-applications-gemini-audio</a></div>
+  </article>
+
+  <article>
+    <div class="item-head"><span class="index">05</span><span class="tag">模型发布</span></div>
+    <h2>Meta 发布首个前沿模型系列 Muse Wonder</h2>
+    <div class="facts">
+      <span><b>时间</b> 2026-10-12</span>
+      <span><b>来源渠道</b> TechCrunch（已由多家独立来源交叉确认）</span>
+    </div>
+    <div class="field">
+      <span class="field-label">背景</span>
+      <p>Meta 之前的 Muse Spark 定位是低延迟的轻量模型，Wonder 系列是它第一次冲前沿大模型。</p>
+    </div>
+    <div class="field">
+      <span class="field-label">内容</span>
+      <p>Meta 超级智能实验室发布 Muse Wonder 与 Muse Wonder Full 两个模型，体积更大、复杂任务（例如编程）表现更好。按 Meta 在模型卡中公布的自家测试，两者基准成绩与 Fable 5.1、GPT-6 Astra 相当。</p>
+    </div>
+    <div class="src">原文：<a href="https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/">techcrunch.com / meta-releases-its-first-frontier-model-muse-wonder</a></div>
+  </article>
+
+  <article>
+    <div class="item-head"><span class="index">06</span><span class="tag">政策监管</span></div>
+    <h2>微软总裁呼吁尽快立法，并称英国最适合主导 AI 安全规则</h2>
+    <div class="facts">
+      <span><b>时间</b> 2026-10-12</span>
+      <span><b>来源渠道</b> TechCrunch（引述 BBC 播客）</span>
+    </div>
+    <div class="field">
+      <span class="field-label">背景</span>
+      <p>他在播客里用了一个对比：牛奶和洗衣机受到的监管，比造 AI 的公司还多。</p>
+    </div>
+    <div class="field">
+      <span class="field-label">内容</span>
+      <p>微软总裁 Brad Smith 在 BBC 播客中把 AI 称作「既是武器也是工具」，认为它正在把全球网络安全置于风险之中，并说制定全球安全规则的「时刻已经到来」。他还表示，英国比美国或欧盟更适合主导全球 AI 安全规则，理由是英国 2023 年成立的 AI 安全研究所（AISI）。</p>
+    </div>
+    <div class="src">原文：<a href="https://techcrunch.com/2026/10/12/microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation/">techcrunch.com / microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation</a></div>
+  </article>
+
+  <article>
+    <div class="item-head"><span class="index">07</span><span class="tag">国产算力</span></div>
+    <h2>DeepSeek 把英伟达工具链铺到华为昇腾，算子层面对标 CUDA 生态</h2>
+    <div class="facts">
+      <span><b>时间</b> 2026-09-30</span>
+      <span><b>来源渠道</b> 雷锋网</span>
+    </div>
+    <div class="field">
+      <span class="field-label">背景</span>
+      <p>写算子（底层计算内核）是 AI 底层开发里门槛最高、最耗时的活。原文指出：算力芯片如果算子写得不达标，几万块的芯片可能只发挥出 20% 的性能；而模型算法迭代太快，芯片厂商的官方算子库永远跟不上。</p>
+    </div>
+    <div class="field">
+      <span class="field-label">内容</span>
+      <p>DeepSeek 开源了整套算子工具链，把原本给英伟达 GPU 写代码的工具原生支持到了华为昇腾 950 NPU：核心算子开发产品 TileLang 官宣原生支持昇腾，同时 DeepGEMM、DeepEP、FlashMLA、TileKernels、DeepSelect 五大计算与通信库也同步推出昇腾版本。原文称，这意味着国产算力第一次在核心算子工具层面做到与英伟达生态的能力对标。</p>
+    </div>
+    <div class="src">原文：<a href="https://www.leiphone.com/category/yanxishe/UUIfK7eeFE9Ws1JI.html">leiphone.com / DeepSeek 开源算子工具大礼包</a></div>
+  </article>
+
+  <article>
+    <div class="item-head"><span class="index">08</span><span class="tag">研究</span></div>
+    <h2>字节团队指出 DeepSeek 的「周期性失忆」：多加几个空格，模型就翻车</h2>
+    <div class="facts">
+      <span><b>时间</b> 2026-10-10</span>
+      <span><b>来源渠道</b> 雷锋网</span>
+    </div>
+    <div class="field">
+      <span class="field-label">背景</span>
+      <p>为了让长文本更便宜，现在很多模型会采用「分块 KV Cache 压缩」：把长上下文切块压缩。代价是内容落在切块交界的「信息盲区」里时，模型可能直接无视它。</p>
+    </div>
+    <div class="field">
+      <span class="field-label">内容</span>
+      <p>字节团队在论文《Periodic Weak Spots: Phase Sensitivity from Chunked KV-Cache Compression》中点名 DeepSeek V4 系列存在该问题。实验里让 DeepSeek-V4-Flash-Base 补全一段 FP8 量化函数的最后一个 Token，正确答案是 8，但在代码最前面加了一串装饰性等号后，模型输出了 32；而且错误呈周期性——等号数量除以 4 余数为 0 或 1 时错误率高达 71.3%，余数为 2 或 3 时正确率高达 91.5%。原文强调这不只是 DeepSeek 的问题，采用同类分块压缩或稀疏化技术的模型（例如开源 Llama 3 系列）都可能受影响。</p>
+    </div>
+    <div class="src">原文：<a href="https://www.leiphone.com/category/yanxishe/zm33Zeu88CNbEPMx.html">leiphone.com / 字节发现 DeepSeek 隐藏 Bug</a>（文中标注论文：arxiv.org/pdf/2609.36322）</div>
+  </article>
+
+  <footer>
+    <h3>来源与核验说明</h3>
+    <p><strong>核验方式：</strong>OpenAI、Anthropic、Google 三条来自其官方发布原文（一手来源）；Meta 与微软两条来自 TechCrunch 并已由其它独立来源交叉确认；雷锋网两条逐篇打开原文核对，其中的关键数据（71.3% / 91.5%、五大库名称、昇腾 950）均直接取自原文，未做推断。</p>
+    <p><strong>本次用到的工具：</strong>Firecrawl。它能把需要浏览器渲染的页面转成可读文本，所以本次新增了中文媒体来源。</p>
+    <p><strong>仍然没能覆盖的渠道：</strong>知乎、微博、微信公众号、百度、腾讯的原始页面需要登录或有反爬限制，本次未能直接抓取。若课程要求必须包含这些渠道，需要你本人登录后复制链接给我，我才能读到内容。</p>
+    <p><strong>整理时间：</strong>2026-10-13。新闻有时效性，引用前建议打开文末原文链接复核。</p>
+  </footer>
+
+</div>
+</body>
+</html>
